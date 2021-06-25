@@ -1,7 +1,6 @@
-//tadi typo gblg :v
 let handler = async (m, { conn, args, usedPrefix }) => {
-  let wehr = args.join (' ')
   let noPrefix = m.text.replace(usedPrefix, '')
+  let wehr = noPrefix.trim().split`|`.slice(0)
 	   let riff = noPrefix.trim().split`|`.slice(1)
 	   for (let i = 0; i < riff[0]; i++) {
 	     conn.sendMessage(m.chat, `${wehr}`, m.mtype)
