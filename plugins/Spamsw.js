@@ -12,26 +12,20 @@ const colors = [
     0xff74676a
 ]
 
-let handler = async (m, { conn, text, args }) => {
-   let riff = args.join("|")
-	   for (let i = 0; i < riff[1]; i++) {
-    let _m = Promise.resolve({ key: { id: '' }})
-    if (!m.quoted && !text) throw 'reply pesan atau sebagai argumen'
-    if (m.quoted && m.quoted.mtype !== 'conversation' && !text) _m = m.quoted.forward('status@broadcast')
-    if (m.quoted && m.quoted.mtype === 'conversation' && !text) _m = conn.sendMessage('status@broadcast', {
+let handler = async (m, { conn, text, args, args }) => {
+let noPrefix = m.text.replace(usedPrefix, '')
+let riffa = noPrefix.trim().split`|`.slice(0)
+	   let riff = noPrefix.trim().split`|`.slice(1)
+	      for (let i = 0; i < riff[0]; i++) {
+						 conn.sendMessage('status@broadcast', {
         text: m.quoted.text,
         textArgb: 0xffffffff,
         backgroundArgb: pickRandom(colors)
     }, 'extendedTextMessage')
-    if (!m.quoted && text) _m = conn.sendMessage('status@broadcast', {
-        text,
-        textArgb: 0xffffffff,
-        backgroundArgb: pickRandom(colors)
-    }, 'extendedTextMessage')
-    if (m.quoted && text) _m = conn.forwardMessage('status@broadcast', await m.quoted.cMod('status@broadcast', text))
-    m.reply((await _m).key.id)
+					}
 }
-}
+
+
 handler.help = ['spamsw [text] (Reply Media)', 'spamsw <text>']
 handler.tags = ['']
 
