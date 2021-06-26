@@ -1,7 +1,9 @@
 let handler = async (m, { conn, args, usedPrefix }) => {
-  let riff = args.join("|")
-	   for (let i = 0; i < riff[1]; i++) {
-	     conn.sendMessage(m.chat, riff[0], m.mtype)
+let noPrefix = m.text.replace(usedPrefix, '')
+let riffa = noPrefix.trim().split`|`.slice(0)
+	   let riff = noPrefix.trim().split`|`.slice(1)
+	   for (let i = 0; i < riff[0]; i++) {
+	     conn.sendMessage(m.chat, riffa[1], m.mtype)
 	   }
 }
 
