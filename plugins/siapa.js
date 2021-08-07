@@ -11,13 +11,13 @@ Jawaban : *@${siapa.replace(/@.+/, '')}*
       } catch (e) {
               console.log(e)
               m.reply('Error')
-              conn.sendMessage('6287754224995@s.whatsapp.net', 'Use error\nNo: *' + m.sender.split`@`[0] + '*\nCommand: *' + m.text + '*\n\n*' + e + '*', MessageType.text)
+              conn.sendMessage('6281390658325@s.whatsapp.net', 'Use error\nNo: *' + m.sender.split`@`[0] + '*\nCommand: *' + m.text + '*\n\n*' + e + '*', MessageType.text)
       }
 }
 handler.help = ['', 'kah'].map(v => 'siapa' + v + ' <text>?')
 handler.tags = ['kerang']
 handler.customPrefix = /(\?$)/
-handler.command = /^dimana(kah)?$/i
+handler.command = /^siapa(kah)?$/i
 handler.group = true
 
 handler.fail = null

@@ -49,7 +49,7 @@ let handler  = async (m, { conn, usedPrefix, DevMode }) => {
         let _ramTotal = (ramTotal + ' MB')
         let neww = performance.now()
         conn.reply(m.chat, `
-  *Status RIFAI Bot*
+  *Status Metro Bot*
 
 OS: *${OS}*
 CPU Model: *${cpuModel}*
