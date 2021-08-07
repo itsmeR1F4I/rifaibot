@@ -2,7 +2,6 @@
 // hargai yang nge buat
 // Case dhamz
 // Remake BochilGaming
-//fixed by rifai
 
 const fs = require('fs')
 const ffmpeg = require('fluent-ffmpeg')
@@ -20,7 +19,7 @@ let handler = async (m, { conn }) => {
                 fs.unlinkSync(media)
 						if (err) return m.reply('Error!')
 						let buff = fs.readFileSync(ran)
-						conn.sendFile(m.chat, buff, ran, null, m, false)
+						conn.sendFile(m.chat, buff, ran, null, m, true)
 						fs.unlinkSync(ran)
             })
         } else m.reply('Kirim audio atau tag audio!!')

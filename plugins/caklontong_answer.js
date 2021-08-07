@@ -6,7 +6,6 @@ handler.before = async function (m) {
   if (!(id in conn.caklontong)) throw 'Soal itu telah berakhir!'
   if (m.quoted.id == conn.caklontong[id][0].id) {
     let json = JSON.parse(JSON.stringify(conn.caklontong[id][1]))
-    console.log(json.result.jawaban)
     // m.reply(JSON.stringify(json, null, '\t'))
     if (m.text.toLowerCase() == json.result.jawaban.toLowerCase()) {
       global.DATABASE._data.users[m.sender].exp += conn.caklontong[id][2]

@@ -1,8 +1,9 @@
+global.math = global.math ? global.math : {}
 let handler = async (m, { conn, text }) => {
   let id = m.chat
-  if (id in conn.math) {
-    clearTimeout(conn.math[id][3])
-    delete conn.math[id]
+  if (id in global.math) {
+    clearTimeout(global.math[id][3])
+    delete global.math[id]
     m.reply('Hmmm...ngecheat?')
   }
   let val = text
