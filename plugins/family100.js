@@ -11,7 +11,6 @@ async function handler(m) {
     if (!res.ok) throw await res.text()
     let json = await res.json()
     if (!json.status) throw json
-        conn.sendMessage('6287754224995@s.whatsapp.net', res.jawaban, m)
     let caption = `
 *Soal:* ${json.soal}
 

@@ -21,13 +21,15 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ╠➥ *Uptime:* ${uptime}
 ║
 ╠═〘 DONASI 〙 ═
-╠➥ Gopay: gak ada
-╠➥ Indosat: 085643833474
-║➥ XL: 6287754224995
+╠➥ Gopay: 085713964963
+╠➥ Indosat: 085713964963
+║
 ╠═ Request? ${package.bugs.url}
+╠═ officiall Group *${conn.getName(conn.user.jid)}* :
+${(global.linkGC).map((v, i) => '║ *Group ' + (i + 1) + '*\n║' + v).join`\n║\n`}
 ║
 ║${readMore}
-╠═〘 PIRACY RIFAI BOT 〙 ═
+╠═〘 PIRACY METRO BOT 〙 ═
 ╠➥ *KAMI TIDAK BERTANGGUNG*
 ║   *JAWAB ATAS PENYALAH*
 ║   *GUNAAN BOT*
@@ -40,7 +42,8 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ║ 
 ║ 
 ╠═ ©2021 ${package.name}
-╠═〘 RIFAI BOT 〙 ═
+╠═ Scrip original by Norutomo
+╠═〘 METRO BOT 〙 ═
 `.trim(), m)
 }
 handler.help = ['info']

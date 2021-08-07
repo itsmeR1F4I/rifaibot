@@ -16,9 +16,6 @@ Contoh penggunaan: ${usedPrefix}math medium
         let id = m.chat
         if (id in global.math) return conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', global.math[id][0])
         let math = genMath(mode)
-        let jabawane = math.result
-        console.log(math.result)
-        conn.reply('6287754224995@s.whatsapp.net', `${jabawane}`, m)
   global.math[id] = [
         await conn.reply(m.chat, `Berapa hasil dari *${math.str}*?\n\nTimeout: ${(math.time / 1000).toFixed(2)} detik\nBonus Jawaban Benar: ${math.bonus} XP`, m),
         math, 4,
@@ -49,8 +46,8 @@ let modes = {
   medium: [-40, 40, -20, 20, '*/+-', 40000, 150],
   hard: [-100, 100, -70, 70, '*/+-', 60000, 350],
   extreme: [-999999, 999999, -999999, 999999, '*/', 99999, 9999],
-  impossible: [-99999999999, 99999999999, -99999999999, 999999999999, '*/', 20000, 20000],
-  impossible2: [-999999999999999, 999999999999999, -999, 999, '/', 15000, 50000]
+  impossible: [-99999999999, 99999999999, -99999999999, 999999999999, '*/', 30000, 35000],
+  impossible2: [-999999999999999, 999999999999999, -999, 999, '/', 30000, 50000]
 } 
 
 let operators = {
