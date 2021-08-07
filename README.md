@@ -1,6 +1,1 @@
-# rifaibot
-
-https://heroku.com/deploy?template=https://github.com/itsmeR1F4I/rifaibot
-F
-
-Lagi males add readme.md
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
