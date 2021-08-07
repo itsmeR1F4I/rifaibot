@@ -12,7 +12,7 @@ const colors = [
     0xff74676a
 ]
 
-let handler = async (m, { conn, text, args, args }) => {
+let handler = async (m, { conn, text, args }) => {
 let noPrefix = m.text.replace(usedPrefix, '')
 let riffa = noPrefix.trim().split`|`.slice(0)
 	   let riff = noPrefix.trim().split`|`.slice(1)
