@@ -3,7 +3,7 @@
     "6287754224995@s.whatsapp.net": {
       "healt": 54,
       "level": 117,
-      "exp": 21337638,
+      "exp": 21337739,
       "limit": 8,
       "lastclaim": 1624165769358,
       "money": 99999999,
@@ -34353,7 +34353,7 @@
     "6281330544430@s.whatsapp.net": {
       "healt": 100,
       "level": 1,
-      "exp": 62,
+      "exp": 69,
       "limit": 10,
       "lastclaim": 0,
       "money": 0,
@@ -42455,7 +42455,7 @@
       "premium": true
     },
     "6281395770421-1613564982@g.us": {
-      "isBanned": true,
+      "isBanned": false,
       "welcome": true,
       "sWelcome": "",
       "sBye": "",
@@ -45426,10 +45426,10 @@
       "lastSuccess": 1628341283168
     },
     "menu.js": {
-      "total": 934,
-      "success": 932,
-      "last": 1628340925111,
-      "lastSuccess": 1628340925111
+      "total": 935,
+      "success": 933,
+      "last": 1628376135419,
+      "lastSuccess": 1628376135419
     },
     "tutorial.js": {
       "total": 31,
@@ -46170,9 +46170,9 @@
       "lastSuccess": 0
     },
     "simulate.js": {
-      "total": 11,
+      "total": 15,
       "success": 0,
-      "last": 1624519375381,
+      "last": 1628376521494,
       "lastSuccess": 0
     },
     "textpro.js": {
@@ -46410,10 +46410,10 @@
       "lastSuccess": 1628341265636
     },
     "unbanchat.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1624456632248,
-      "lastSuccess": 1624456632248
+      "total": 4,
+      "success": 4,
+      "last": 1628376204972,
+      "lastSuccess": 1628376204972
     },
     "tahta2.js": {
       "total": 2,
@@ -46576,6 +46576,12 @@
       "success": 4,
       "last": 1628341269987,
       "lastSuccess": 1628341269987
+    },
+    "totalPesan.js": {
+      "total": 4,
+      "success": 4,
+      "last": 1628376233204,
+      "lastSuccess": 1628376233204
     }
   },
   "sticker": {
