@@ -21,8 +21,8 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ╠➥ *Uptime:* ${uptime}
 ║
 ╠═〘 DONASI 〙 ═
-╠➥ Gopay: 085713964963
-╠➥ Indosat: 085713964963
+╠➥ Gopay: 0877542249995
+╠➥ Indosat: 085643833474
 ║
 ╠═ Request? ${package.bugs.url}
 ╠═ officiall Group *${conn.getName(conn.user.jid)}* :
@@ -43,7 +43,7 @@ ${(global.linkGC).map((v, i) => '║ *Group ' + (i + 1) + '*\n║' + v).join`\n�
 ║ 
 ╠═ ©2021 ${package.name}
 ╠═ Scrip original by Norutomo
-╠═〘 METRO BOT 〙 ═
+╠═〘 RIFAIBOT 〙 ═
 `.trim(), m)
 }
 handler.help = ['info']
