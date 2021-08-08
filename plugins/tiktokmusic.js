@@ -7,7 +7,7 @@ tiktokmc = args.join(' ')
 anuh = await TiktokDownloader(`${tiktokmc}`)
 const cerok = await anuh.result.nowatermark
 let aumdio = await toAudio(cerok, 'mp4')
-conn.sendMessage(m.chat, audio, MessageType.audio, {
+conn.sendMessage(m.chat, aumdio, MessageType.audio, {
     quoted: m
   })
 }
