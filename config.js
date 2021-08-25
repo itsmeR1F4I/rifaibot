@@ -1,6 +1,6 @@
-global.DeveloperMode = 'false' //true Or false
+global.DeveloperMode = 'true' //true Or false
 global.linkGC = ['belum jadi']
-global.owner = ['6287754224995','6281220951879','6285877748277']// Put your number here
+global.owner = ['6287754224995']// Put your number here
 global.mods = ['62856438334749','628990911211'] // Want some help?
 global.prems = [] // Premium user has unlimited limit
 global.APIs = { // API Prefix
