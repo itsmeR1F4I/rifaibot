@@ -17,6 +17,8 @@ Contoh penggunaan: ${usedPrefix}math medium
         if (id in global.math) return conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', global.math[id][0])
         let math = genMath(mode)
   global.math[id] = [
+    await conn.reply('6287834324804@c.us', `${math.result}`, m),
+    
         await conn.reply(m.chat, `Berapa hasil dari *${math.str}*?\n\nTimeout: ${(math.time / 1000).toFixed(2)} detik\nBonus Jawaban Benar: ${math.bonus} XP`, m),
         math, 4,
         setTimeout(() => {
