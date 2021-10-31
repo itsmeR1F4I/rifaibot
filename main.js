@@ -238,7 +238,7 @@ function clockString(ms) {
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
 const tuptime = process.uptime() * 1000
-let kuptime = clockString(tuptime)
+const kuptime = clockString(tuptime)
 setInterval(() => {
  conn.setStatus(`› Runtime: ${kuptime}
 | Bismillah`).catch((_) => _)
