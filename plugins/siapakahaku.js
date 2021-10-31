@@ -20,6 +20,7 @@ Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}who untuk bantuan
 Bonus: ${poin} XP
 `.trim()
+console.log(json.result.jawaban)
     conn.siapakahaku[id] = [
         await conn.reply(m.chat, caption, m),
         json, poin,

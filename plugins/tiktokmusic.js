@@ -6,7 +6,7 @@ if (!args[0]) throw 'Uhm...url nya mana?'
 tiktokmc = args.join(' ')
 anuh = await TiktokDownloader(`${tiktokmc}`)
 const cerok = await anuh.result.nowatermark
-let aumdio = await toAudio(cerok, 'mp4')
+let aumdio = await toAudio(cerok)
 conn.sendMessage(m.chat, aumdio, MessageType.audio, {
     quoted: m
   })

@@ -1,15 +1,12 @@
-let handler = async(m, { conn }) => {
-var nom = m.participant
-                                        const tagme = {
-                                                text: `@${nom.split("@s.whatsapp.net")[0]} Tuh dah ku tag!`,
-                                                contextInfo: { mentionedJid: [nom] }
-                                        }
-                                        conn.sendMessage(m.chat, tagme, m.mtype, {quoted: m})
+let handler = async (m, { conn, text }) => {
+  let tag = `@${m.sender.replace(/@.+/, '')}`
+  let mentionedJid = [m.sender]
+  conn.reply(m.chat, tag, m, { contextInfo: { mentionedJid }})
 }
-
 handler.help = ['tagme']
-handler.tags = ['main']
-
+handler.tags = ['group']
 handler.command = /^tagme$/i
+
+handler.group = false
 
 module.exports = handler
